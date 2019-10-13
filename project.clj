@@ -1,4 +1,4 @@
-(defproject sns-verify "0.0.1"
+(defproject sns-verify
   :description "sample AWS SNS HTTP(S) endpoint that checks message validity"
   :url "https://github.com/dharnitski/sns-verify-clj"
   :min-lein-version "2.9.1"
