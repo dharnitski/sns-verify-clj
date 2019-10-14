@@ -1,0 +1,12 @@
+{
+    "Type": "Notification",
+    "MessageId": "a5b3def0-7b01-5646-87fd-88eda0a28ee7",
+    "TopicArn": "arn:aws:sns:us-east-1:941749041526:test",
+    "Subject": "test subject",
+    "Message": "test message",
+    "Timestamp": "2019-10-14T02:11:47.508Z",
+    "SignatureVersion": "1",
+    "Signature": "igBhLEV0Blgu629Ls7xqKj0mwpmEyj+pOU5t6w41xsFZwof0gxh/HZ8DxxEJdb+i2WmgAhzK9gyOGXzNR4NOrSS0D3rGo/rLK5lA8Ok1EKLKPKUneCZzKxVmQpJvTnXfPgjCh/OrdGWFJyCgPfiWdjiehkHG2GIsGeEO5lcb3g+x+0DVyDlQJc51qnh794jovp0b0ZbdiPRTHw1rNcYCj24ak5hiYQb+PRaYN9s2GVoBo7RookyUHD6rf226pIBfpMI2nBDGNp+EJ9h2uqTSJU6lHIMZRU7N0HmocFtWuYbRFA1KVxYCh7FSprUBxBqiWDaoIF8MnNL5iIUUJTOhVQ==",
+    "SigningCertURL": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-6aad65c2f9911b05cd53efda11f913f9.pem",
+    "UnsubscribeURL": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:941749041526:test:eb729070-92b3-43ef-b334-0746f9a465b2"
+}

@@ -3,7 +3,8 @@
   :url "https://github.com/dharnitski/sns-verify-clj"
   :min-lein-version "2.9.1"
   :dependencies [[org.clojure/clojure "1.10.1"]
-                 [ring/ring-core "1.7.1"]]
+                 [ring/ring-core "1.7.1"]
+                 [com.amazonaws/aws-java-sdk-sns "1.11.641"]]
   :plugins [[lein-ring "0.12.5"]]
   :ring {:handler sns-verify.core/handler
          :port 8080})

@@ -1,6 +1,7 @@
 (ns sns-verify.core-test
   (:require
    [clojure.test :refer :all]
+   [clojure.java.io :as io]
    [sns-verify.core :refer :all]))
 
 (testing "get-handler"
@@ -10,9 +11,10 @@
             :headers {"Content-Type" "text/html"}
             :body "Hello World"}))))
 
-(testing "post-handler"
-  (deftest post-success
-    (is (= (handler {:request-method :post})
+(testing "sns-handler"
+  (deftest sns-success
+    (is (= (handler {:request-method :post
+                     :body (io/input-stream "testdata/sns-valid.json")})
            {:status 200
             :headers {"Content-Type" "text/html"}
-            :body "Hello World"}))))
+            :body "arn:aws:sns:us-east-1:941749041526:test"}))))

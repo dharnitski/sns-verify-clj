@@ -14,6 +14,12 @@
 
     lein ring server
 
+## Intergation Test
+
+Requires running web server.
+
+    curl -X POST -H "Content-Type: application/json" -d @testdata/sns-valid.json  http://localhost:8080
+
 ## Run tests
 
     lein test
