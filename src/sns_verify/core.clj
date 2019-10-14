@@ -1,11 +1,12 @@
-(ns sns-verify.core)
+(ns sns-verify.core
+  (:import (com.amazonaws.services.sns.message SnsMessageManager)))
 
 (defn get-handler []
   {:status 200
    :headers {"Content-Type" "text/html"}
    :body "Hello World"})
 
-(def manager (new com.amazonaws.services.sns.message.SnsMessageManager "us-east-1"))
+(def manager (new SnsMessageManager "us-east-1"))
 
 (defn parse-message
   "Loads message from requiest body stream. Throw if message is not valid."
