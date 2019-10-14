@@ -17,4 +17,10 @@
                      :body (io/input-stream "testdata/sns-valid.json")})
            {:status 200
             :headers {"Content-Type" "text/html"}
-            :body "arn:aws:sns:us-east-1:941749041526:test"}))))
+            :body "arn:aws:sns:us-east-1:941749041526:test"})))
+
+  (deftest sns-not-valid
+    (is (thrown? com.amazonaws.SdkClientException
+                 (handler {:request-method :post
+                           :body (io/input-stream "testdata/sns-tampered.json")})))))
+
