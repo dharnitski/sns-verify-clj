@@ -17,7 +17,9 @@
                      :body (io/input-stream "testdata/sns-valid.json")})
            {:status 200
             :headers {"Content-Type" "text/html"}
-            :body "arn:aws:sns:us-east-1:941749041526:test"})))
+            :body {:topic-arn "arn:aws:sns:us-east-1:941749041526:test"
+                   :message-id "a5b3def0-7b01-5646-87fd-88eda0a28ee7"
+                   :timestamp #inst "2019-10-14T02:11:47.508-00:00"}})))
 
   (deftest sns-not-valid
     (is (thrown? com.amazonaws.SdkClientException
